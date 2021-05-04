@@ -35,7 +35,7 @@ def main():
     jumpTable['8'] = stub                 # Hopper - call to function goes here
     jumpTable['9'] = stub                 # Newman - call to function goes here
     jumpTable['10'] = stub                # Nguyen - call to function goes here
-    jumpTable['11'] = stub                # Rodriguez Rosales - call to function goes here
+    jumpTable['11'] = rodriguezFunction   # Rodriguez Rosales - call to function goes here
     jumpTable['12'] = stub                # Seaman - call to function goes here
     jumpTable['13'] = stub                # Silva - call to function goes here
     jumpTable['14'] = stub                # Simmons - call to function goes here
@@ -113,6 +113,39 @@ def showMenu():
 #  
 # FunctionName:  lastnameFunction(your parameters)
 # *****************************************************************************************
+
+# *****************************************************************************************
+# FUNCTION:         rodriguezFunction
+# DESCRIPTION:      Prints out a random saying attributed to LaoTzu
+# OUTPUT EXAMPLE:   Program outputs something like the following:
+#                      LaoTzu once said: Be Like Water~
+# *****************************************************************************************
+def rodriguezFunction():
+    print()
+    print()
+    
+    import random
+    # list to store quotes
+    quotes = ['From wonder into wonder existence opens.', 'Knowledge is a treasure, but practice is the key to it.',
+              'If you do not change direction you may end up where you are headed.', 'To know what you do not know is best.',
+              'Knowing others is intelligence; knowing yourself is true wisdom.', 'Because of a great love, one is courageous.',
+              'Mastering others is strength; mastering yourself is true power.', 'The way of heaven is to help and not harm.',
+              'Be still. Stillness reveals the secrets of eternity.', 'Respond intelligently even to unintelligent treatment.',
+              'To understand the limits of things, desire them.', 'He who talks more is sooner exhausted.',
+              'A man with outward courage dares to die; a man with inner courage dares to live', 'Respond to anger with virtue.',
+              'He who knows enough is enough will always have enough.', 'Composure is the rule of instability.',
+              'Love is of all the passions the strongest, for it attacks simultaneously the head, the heart and the senses.',
+              'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.',
+              'The further one goess, the less one knows.', 'Manifest plainness, embrace simplicity, reduce selfishness.']
+    # random number for element in list to be displayed
+    ranElem = random.randint(0, 19)
+    # prints quote
+    print("Lao Tzu once said:")
+    print("     " + quotes[ranElem])
+
+    print()
+    print("Press ENTER to continue.")
+    input()
 
 # *****************************************************************************************
 # FUNCTION:         stub (default for menu)
